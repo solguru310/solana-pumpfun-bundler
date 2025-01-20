@@ -1,5 +1,5 @@
 # solana-pumpfun-bundler
-The Solana PumpFun Bundler is a utility that combines multiple transactions to lower gas fees and enhance blockchain performance.
+The #Solana #PumpFun #Bundler bot is a powerful tool designed to #bundle multiple #transactions on the #Solana blockchain, reducing gas fees while improving the performance and efficiency of Solana-based operations.
 
 The PumpFun SDK offers a user-friendly interface for managing Pump.fun operations on Solana. Designed for token creation, transaction bundling, and more, this SDK integrates seamlessly with the Jito Service and LookupTable to enable efficient transaction processing, token management, and enhanced user experiences.
 
@@ -28,4 +28,7 @@ Here’s an example of a successful transaction using 20 wallets:
 - Main Wallet: en1omyBPyReHeUQfRvFqPtDPrzwQWSuKQMRctXLFmwh
 
 ## Contact me
+
 Telegram: @dwlee918
+
+X: @dwlee918
