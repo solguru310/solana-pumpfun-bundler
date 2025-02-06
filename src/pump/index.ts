@@ -50,9 +50,9 @@ export class PumpFunSDK {
     public GLOBAL_ACCOUNT_SEED = "global"
     public BONDING_CURVE_SEED = "bonding-curve"
     public METADATA_SEED = "metadata"
-    public GLOBAL_MINT = new PublicKey("Hf7SSrAovo2p2zoVewsVuFXzEAcAFVXw5tqJpGnkHbom")
-    public PROGRAM_ID = new PublicKey("6EF8rrecthR5Dkzon8Nwu78hRvfCKubJ14M5uBEwF6P");
-    public MPL_TOKEN_METADATA_PROGRAM_ID = new PublicKey("metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s");
+    public GLOBAL_MINT = new PublicKey("global_mint")
+    public PROGRAM_ID = new PublicKey("program_id");
+    public MPL_TOKEN_METADATA_PROGRAM_ID = new PublicKey("mpl_token_metadata_program_id");
     public count: number
 
     public program: Program<PumpFun>;
@@ -119,34 +119,6 @@ export class PumpFunSDK {
 
         createAndBuyResults.results = { mint: mint.publicKey.toBase58() }
         return createAndBuyResults
-    }
-
-    async createAndBatchBuy(
-        creator: Array<Keypair>,
-        buyAmountSol: Array<bigint>,
-        createTokenMetadata: CreateTokenMetadata,
-        mint?: Keypair,
-        walletCounts?: number,
-        slippageBasisPoints: bigint = 500n,
-        priorityFees?: PriorityFee,
-        commitment: Commitment = commitmentType.Confirmed,
-        finality: Finality = commitmentType.Finalized
-    ) {
-        // shortening codebase...
-    }
-
-    async batchSell(
-        creator: Array<Keypair>,
-        sellAmount: Array<bigint>,
-        createTokenMetadata: CreateTokenMetadata,
-        mint: PublicKey,
-        walletCounts?: number,
-        slippageBasisPoints: bigint = 500n,
-        priorityFees?: PriorityFee,
-        commitment: Commitment = commitmentType.Confirmed,
-        finality: Finality = commitmentType.Finalized
-    ) {
-        // shortening codebase...
     }
 
     async createTokenMetadata(create: CreateTokenMetadata) {
