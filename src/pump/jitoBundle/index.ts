@@ -61,10 +61,6 @@ export const jitoBundle = async (transactions: VersionedTransaction[], payer: Ke
 
     const endpoints = [
       'https://ny.mainnet.block-engine.jito.wtf/api/v1/bundles',
-      // 'https://mainnet.block-engine.jito.wtf/api/v1/bundles',
-      // 'https://amsterdam.mainnet.block-engine.jito.wtf/api/v1/bundles',
-      // 'https://frankfurt.mainnet.block-engine.jito.wtf/api/v1/bundles',
-      // 'https://tokyo.mainnet.block-engine.jito.wtf/api/v1/bundles',
     ];
 
     let bundleId: string = "";
@@ -122,7 +118,9 @@ export const jitoBundle = async (transactions: VersionedTransaction[], payer: Ke
 
 
 export const jitoExpertBundle = async (preTx: Transaction, signers: Keypair[], transactions: VersionedTransaction[], payer: Keypair, feepay: boolean = true) => {
-  // shortening codebase ...
+  /**
+    shortening codebase ...
+  */
 }
 
 
